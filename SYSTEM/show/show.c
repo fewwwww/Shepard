@@ -1,6 +1,7 @@
 #include "show.h"
 #include "oled.h"
 #include "common.h"
+//#include <stdio.h>
 extern int a1,a2,a3,a4,x,i;
 /**************************************************************************
 函数功能：OLED显示
@@ -16,6 +17,7 @@ void oled_show(void)
 	   OLED_ShowString(00,36,"HIGH:");
 	   OLED_ShowString(100,36,"HZ");   
 	   OLED_ShowString(00,48,"TEL:");
+//	   OLED_ShowString(48,48,"**********");
 	   switch(x)
 		 {
 			 case 1:OLED_ShowNumber(i,48,x,1,12);OLED_ShowNumber(50,24,697,5,12);OLED_ShowNumber(50,36,1209,5,12);break;

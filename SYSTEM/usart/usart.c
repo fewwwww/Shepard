@@ -107,19 +107,19 @@ void Uart2_Gpio_Config(void)
 }
 void Uart3_Gpio_Config(void)
 {
-  GPIO_InitTypeDef GPIO_InitStructure;
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	//使能USART2，GPIOA时钟
-  RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3,ENABLE);	//使能USART2，GPIOA时钟
-		//USART3_TX   GPIOB.10
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10; //PB.10
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
-  GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化GPIOB.10
-   
-  //USART3_RX	  GPIOB.11初始化
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;//PB11
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;//浮空输入
-  GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化GPIOB.11  
+//  GPIO_InitTypeDef GPIO_InitStructure;
+//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	//使能USART2，GPIOA时钟
+//  RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3,ENABLE);	//使能USART2，GPIOA时钟
+//		//USART3_TX   GPIOB.10
+//  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10; //PB.10
+//  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
+//  GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化GPIOB.10
+//   
+//  //USART3_RX	  GPIOB.11初始化
+//  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;//PB11
+//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;//浮空输入
+//  GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化GPIOB.11  
 
 }
 
