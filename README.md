@@ -9,4 +9,5 @@ The device is based on STM32F103. For the sound detection module, I use LM386. F
 The files uploaded are some of the codes that require coders to modify, so that functions will be completed. To open this project, you need to use KEIL5, and click on the Robot.uvprojx file. Some of the codes of the project are not uploaded, because they are configuration files of the STM32.
 
 *In ShowMeYourFloor branch, there is a application that allows detected numbers to show on your PC when you plug the device with PC.
+ !!!You may need to change port number inside the code of Form1 so that your device can be connected.!!!
 
